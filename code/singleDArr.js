@@ -601,8 +601,7 @@ public class q23 {
 };
 
 function loadQuestion(num) {
-  const question = dml
-[num.toString()];
+  const question = ODVC[num.toString()];
   if (!question) return;
 
   document.querySelector('.default').style.display = 'none';
@@ -610,37 +609,44 @@ function loadQuestion(num) {
   container.style.display = 'block';
 
   const titleEl = document.getElementById('question-title');
-document.getElementById('question-number').textContent = `Q${num}`;
+  document.getElementById('question-number').textContent = `Q${num}`;
   titleEl.style.whiteSpace = "pre-line";
-
   titleEl.textContent = question.title;
   document.getElementById('code-block').textContent = question.code;
 
-  const outputData = question.output;
   const outputBlock = document.getElementById('output-block');
+  const outputData = question.output;
 
   if (!outputData || outputData.length === 0) {
     outputBlock.innerHTML = "No data";
     return;
   }
 
-  let table = "<table border='1'><thead><tr>";
-
-  Object.keys(outputData[0]).forEach(key => {
-    table += `<th>${key}</th>`;
-  });
-
-  table += "</tr></thead><tbody>";
-
-  outputData.forEach(row => {
-    table += "<tr>";
-    Object.values(row).forEach(value => {
-      table += `<td>${value ?? "NULL"}</td>`;
+  // If output is array of objects (table-like), render table
+  if (Array.isArray(outputData) && outputData.every(item => typeof item === "object" && !Array.isArray(item))) {
+    let table = "<table border='1'><thead><tr>";
+    Object.keys(outputData[0]).forEach(key => {
+      table += `<th>${key}</th>`;
     });
-    table += "</tr>";
-  });
+    table += "</tr></thead><tbody>";
 
-  table += "</tbody></table>";
+    outputData.forEach(row => {
+      table += "<tr>";
+      Object.values(row).forEach(value => {
+        table += `<td>${value ?? "NULL"}</td>`;
+      });
+      table += "</tr>";
+    });
 
-  outputBlock.innerHTML = table;
+    table += "</tbody></table>";
+    outputBlock.innerHTML = table;
+  } else {
+    // Otherwise, treat output as raw lines/text
+    // Convert array to string with line breaks if needed
+    if (Array.isArray(outputData)) {
+      outputBlock.innerHTML = outputData.join("<br>");
+    } else {
+      outputBlock.innerHTML = outputData.toString().replace(/\n/g, "<br>");
+    }
+  }
 }
