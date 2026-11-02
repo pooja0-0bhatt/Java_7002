@@ -601,7 +601,7 @@ public class q23 {
 };
 
 function loadQuestion(num) {
-  const question = ODVC[num.toString()];
+  const question = dml[num.toString()];
   if (!question) return;
 
   document.querySelector('.default').style.display = 'none';
