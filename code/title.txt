@@ -1,0 +1,275 @@
+1
+
+Write a Java program to print ‘Hello World!’ on screen
+Start Solving
+2
+
+Write a Java program to print the sum of two numbers
+Start Solving
+3
+
+Write a Java program that takes two numbers and display the product of two numbers
+Start Solving
+4
+
+Write a Java program to print the sum, multiply, subtract, divide and remainder of two numbers
+Start Solving
+5
+
+Write a Java program that takes five numbers as input to calculate and print the average of the numbers
+Start Solving
+6
+
+Write a Java program to swap two variables
+Start Solving
+7
+
+Write a Java program to convert a decimal number to binary numbers
+Start Solving
+8
+
+Write a Java program to convert a binary number to decimal number
+Start Solving
+9
+
+Write a Java program to check whether Java is installed on your computer or not
+Start Solving
+10
+
+Write a Java program and compute the sum of the digits of an integer
+Start Solving
+11
+
+Write a Java program to compare two numbers
+Start Solving
+12
+
+Write a Java program to count the letters, spaces, numbers and other characters of an input string
+Start Solving
+13
+
+Write a Java program to print the ascii value of a given character
+Start Solving
+14
+
+Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn
+Start Solving
+15
+
+Write a Java program to display the system time
+Start Solving
+16
+
+Write a Java program to print the odd numbers from 1 to 20
+Start Solving
+17
+
+Write a Java program to print the even numbers from 1 to 20
+Start Solving
+18
+
+Write a Java program to convert a string to an integer
+Start Solving
+19
+
+Write a Java program to convert seconds to hour, minute and seconds
+Start Solving
+20
+
+Write a Java program to compute the sum of the first 100 prime numbers
+Start Solving
+21
+
+Write a Java program to swap the first and last elements of an array and create a new array
+Start Solving
+22
+
+Write a Java program to count the number of even and odd elements in a given array
+Start Solving
+23
+
+Write a Java program to compute the square root of an given integer
+Start Solving
+24
+
+Write a Java program to check if a positive number is a palindrome or not
+Start Solving
+25
+
+Write a Java program to add two numbers without using any arithmetic operators
+Start Solving
+26
+
+Write a Java program to add all the digits of a given positive integer
+Start Solving
+27
+
+Java program to find area of circle
+Start Solving
+28
+
+Java Program to find area of rectangle
+Start Solving
+29
+
+Java Program to find area of triangle
+Start Solving
+30
+
+Java Program to find area of equilateral triangle
+Start Solving
+31
+
+Java Program to find area of rhombus
+Start Solving
+32
+
+Java Program to find area of parallelogram
+Start Solving
+33
+
+Java Program to find area of Prism
+Start Solving
+34
+
+Java Program to find volume of sphere
+Start Solving
+35
+
+Java Program to find volume of cylinder
+Start Solving
+36
+
+Java Program to find volume of cuboid
+Start Solving
+37
+
+Java Program to find volume of cone
+Start Solving
+38
+
+Java program to find surface area of cuboid
+Start Solving
+39
+
+Java program to find surface area of cylinder
+Start Solving
+40
+
+Java program to find surface area of cube
+Start Solving
+41
+
+Java program to calculate average marks
+Start Solving
+42
+
+Java program to check vowel or consonant
+Start Solving
+43
+
+Java program to sum of N numbers
+Start Solving
+44
+
+Java program to find factorial of any number
+Start Solving
+45
+
+Java Program to calculate electricity bill
+Start Solving
+46
+
+Java Program To Calculate CGPA Percentage
+Start Solving
+47
+
+Java Program to calculate compound interest
+Start Solving
+48
+
+Java Program To Calculate Batting Average
+Start Solving
+49
+
+Java Pogram to Calculate Commission Percentage
+Start Solving
+50
+
+Java Pogram To Find Distance Between Two Points
+Start Solving
+51
+
+Java Program To Calculate Power Of Number
+Start Solving
+52
+
+Write a Java program to take three numbers from the user and print the greatest number
+Start Solving
+53
+
+Write a Java program to find the number of days in a month
+Start Solving
+54
+
+Write a Java program to test a number is positive or negative
+Start Solving
+55
+
+Write a Java Program to accept number of week’s day (1-7) and print name of the day
+Start Solving
+56
+
+Write a Java program that takes a year from user and print whether that year is a leap year or not
+Start Solving
+57
+
+Write a Java program to input 5 numbers from keyboard and find their sum and average
+Start Solving
+58
+
+Write a program in Java to display the first 5 natural numbers
+Start Solving
+59
+
+Write a java program to check vowel or consonant
+Start Solving
+60
+
+Write a Java program to display the cube of the number upto given an integer
+Start Solving
+61
+
+Write a Java program to display the n terms of odd natural number and their sum
+Start Solving
+62
+
+Write a Java program to display the multiplication table of a given integer
+Start Solving
+63
+
+Write a Java program that reads an integer and check whether it is negative, zero, or positive
+Start Solving
+64
+
+Write a Java program that reads an positive integer and count the number of digits
+Start Solving
+65
+
+Write a Java program that accepts three numbers and check All numbers are equal or not
+Start Solving
+66
+
+Write a java program that accepts three numbers from the user and check if numbers are in “increasing” or “decreasing” order.
+Start Solving
+67
+
+Write a Java program that determines a student’s grade
+Start Solving
+68
+
+Write a Java program to create a simple calculator
+Start Solving
+69
+
+Write a Java program to concatenate two string
