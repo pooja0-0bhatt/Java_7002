@@ -11,7 +11,7 @@ public class q1 {
     }
 }
 `,
-        "output": ``
+        "output": `Hello World!`
     },
     "2": {
         "title": `Write a Java program to print the sum of two numbers`,
@@ -24,7 +24,7 @@ public class q2 {
         System.out.println("Sum of the two numbers are :"+ c);
     } 
 }`,
-        "output": ``
+        "output": `Sum of the two numbers are :32`
     },
     "3": {
         "title": `Write a Java program that takes two numbers and display the product of two numbers`,
@@ -48,7 +48,9 @@ public class q3 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter two numbers: 6   
+2
+Product: 12`
     },
     "4": {
         "title": `Write a Java program to print the sum, multiply, subtract, divide and remainder of two numbers`,
@@ -75,7 +77,13 @@ public class q4 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter two numbers: 12
+6
+Sum: 18
+Multiplication: 72
+Subtraction: 6
+Division: 2
+Remainder: 0`
     },
     "5": {
         "title": `Write a Java program that takes five numbers as input to calculate and print the average of the numbers`,
@@ -105,7 +113,12 @@ public class q5 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter five numbers: 55
+23
+43
+98
+12
+Average: 46.2`
     },
     "6": {
         "title": `Write a Java program to swap two variables`,
@@ -136,34 +149,41 @@ public class q6 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter two numbers: 34
+55
+Before swapping:
+a = 34
+b = 55
+After swapping:
+a = 55
+b = 34`
     },
     "7": {
         "title": `Write a Java program to convert a decimal number to binary numbers`,
         "code": `
-package basic;
+// package basic;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class q7 {
-    public static void main(String args[]) {
-        Scanner input = new Scanner(System.in);
+// public class q7 {
+//     public static void main(String args[]) {
+//         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a decimal number: ");
-        int num = input.nextInt();
+//         System.out.print("Enter a decimal number: ");
+//         int num = input.nextInt();
 
-        int binary = 0, place = 1;
+//         int binary = 0, place = 1;
 
-        while (num > 0) {
-            int remainder = num % 2;
-            binary = binary + remainder * place;
-            num = num / 2;
-            place = place * 10;
-        }
+//         while (num > 0) {
+//             int remainder = num % 2;
+//             binary = binary + remainder * place;
+//             num = num / 2;
+//             place = place * 10;
+//         }
 
-        System.out.println("Binary: " + binary);
-    }
-}
+//         System.out.println("Binary: " + binary);
+//     }
+// }
 `,
         "output": ``
     },
@@ -227,7 +247,8 @@ public class q10 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter an integer: 256
+Sum of digits: 13`
     },
     "11": {
         "title": `Write a Java program to compare two numbers`,
@@ -254,7 +275,9 @@ public class q11 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter two numbers: 33
+43
+33 is smaller than 43`
     },
     "12": {
         "title": `Write a Java program to count the letters, spaces, numbers and other characters of an input string`,
@@ -293,7 +316,11 @@ public class q12 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter a string: Hello world!
+Letters: 10
+Spaces: 1
+Numbers: 0
+Other characters: 1`
     },
     "13": {
         "title": `Write a Java program to print the ascii value of a given character`,
@@ -315,7 +342,8 @@ public class q13 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter a character: y
+ASCII value: 121`
     },
     "14": {
         "title": `Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn`,
