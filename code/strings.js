@@ -53,7 +53,7 @@ public class q2 {
 `,
     "output": `Original String: Hello
 Copied String: Hello
-Are both references same? true`
+Are both references same? false`
   },
   "3": {
     "title": `Program to prove String is immutable programmatically?`,
