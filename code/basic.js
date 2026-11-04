@@ -1,4 +1,4 @@
-let grp_fn =
+let ODVC =
 {
     "1": {
         "title": `Write a Java program to print ‘Hello World!’ on screen`,
@@ -1579,55 +1579,52 @@ public class q67 {
 };
 
 function loadQuestion(num) {
-    const question = grp_fn[num.toString()];
-    if (!question) return;
+  const question = ODVC[num.toString()];
+  if (!question) return;
 
-    document.querySelector('.default').style.display = 'none';
-    const container = document.getElementById('question-container');
-    container.style.display = 'block';
+  document.querySelector('.default').style.display = 'none';
+  const container = document.getElementById('question-container');
+  container.style.display = 'block';
 
-    const titleEl = document.getElementById('question-title');
-    document.getElementById('question-number').textContent = `Q${num}`;
-    titleEl.style.whiteSpace = "pre-line";
+  const titleEl = document.getElementById('question-title');
+  document.getElementById('question-number').textContent = `Q${num}`;
+  titleEl.style.whiteSpace = "pre-line";
+  titleEl.textContent = question.title;
+  document.getElementById('code-block').textContent = question.code;
 
-    titleEl.textContent = question.title;
-    document.getElementById('code-block').textContent = question.code;
+  const outputBlock = document.getElementById('output-block');
+  const outputData = question.output;
 
-    const outputData = question.output;
-    const outputBlock = document.getElementById('output-block');
+  if (!outputData || outputData.length === 0) {
+    outputBlock.innerHTML = "No data";
+    return;
+  }
 
-    if (!outputData || outputData.length === 0) {
-        outputBlock.innerHTML = "No data";
-        return;
-    }
-
-    // clear old output
-    outputBlock.innerHTML = "";
-
-    // supports both single & multiple tables
-    const tables = Array.isArray(outputData[0]) ? outputData : [outputData];
-
-    tables.forEach(tableData => {
-        if (!tableData || tableData.length === 0) return;
-
-        let table = "<table border='1'><thead><tr>";
-
-        Object.keys(tableData[0]).forEach(key => {
-            table += `<th>${key}</th>`;
-        });
-
-        table += "</tr></thead><tbody>";
-
-        tableData.forEach(row => {
-            table += "<tr>";
-            Object.values(row).forEach(value => {
-                table += `<td>${value ?? "NULL"}</td>`;
-            });
-            table += "</tr>";
-        });
-
-        table += "</tbody></table><br>";
-
-        outputBlock.innerHTML += table;
+  // If output is array of objects (table-like), render table
+  if (Array.isArray(outputData) && outputData.every(item => typeof item === "object" && !Array.isArray(item))) {
+    let table = "<table border='1'><thead><tr>";
+    Object.keys(outputData[0]).forEach(key => {
+      table += `<th>${key}</th>`;
     });
+    table += "</tr></thead><tbody>";
+
+    outputData.forEach(row => {
+      table += "<tr>";
+      Object.values(row).forEach(value => {
+        table += `<td>${value ?? "NULL"}</td>`;
+      });
+      table += "</tr>";
+    });
+
+    table += "</tbody></table>";
+    outputBlock.innerHTML = table;
+  } else {
+    // Otherwise, treat output as raw lines/text
+    // Convert array to string with line breaks if needed
+    if (Array.isArray(outputData)) {
+      outputBlock.innerHTML = outputData.join("<br>");
+    } else {
+      outputBlock.innerHTML = outputData.toString().replace(/\n/g, "<br>");
+    }
+  }
 }
