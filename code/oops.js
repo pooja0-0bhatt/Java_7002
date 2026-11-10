@@ -256,8 +256,117 @@ Monthly Salary: 35000.0
 Annual Salary: 420000.0`
   },
    "7": {"title": `Write a Java program to create a class called "Bank" with a collection of accounts and methods to add and remove accounts, and to deposit and withdraw money. Also define a class called "Account" to maintain account details of a particular customer.`,
-    "code":  ``,
-    "output": ``
+    "code":  `package oops;
+
+class Account {
+    int accNo;
+    String name;
+    double balance;
+
+    Account(int accNo, String name, double balance) {
+        this.accNo = accNo;
+        this.name = name;
+        this.balance = balance;
+    }
+}
+
+class Bank {
+    Account accounts[] = new Account[10];
+    int totalAccounts = 0;
+
+    void addAccount(Account a) {
+        accounts[totalAccounts] = a;
+        totalAccounts++;
+        System.out.println("Account added successfully.");
+    }
+
+    void removeAccount(int accNo) {
+        for (int i = 0; i < totalAccounts; i++) {
+            if (accounts[i].accNo == accNo) {
+                for (int j = i; j < totalAccounts - 1; j++) {
+                    accounts[j] = accounts[j + 1];
+                }
+                totalAccounts--;
+                System.out.println("Account removed.");
+                return;
+            }
+        }
+        System.out.println("Account not found.");
+    }
+
+    void deposit(int accNo, double amount) {
+        for (int i = 0; i < totalAccounts; i++) {
+            if (accounts[i].accNo == accNo) {
+                if (amount > 0) {
+                    accounts[i].balance += amount;
+                    System.out.println("Amount deposited.");
+                }
+                return;
+            }
+        }
+        System.out.println("Account not found.");
+    }
+
+    void withdraw(int accNo, double amount) {
+        for (int i = 0; i < totalAccounts; i++) {
+            if (accounts[i].accNo == accNo) {
+                if (amount > 0 && accounts[i].balance >= amount) {
+                    accounts[i].balance -= amount;
+                    System.out.println("Amount withdrawn.");
+                } else {
+                    System.out.println("Insufficient balance or invalid amount.");
+                }
+                return;
+            }
+        }
+        System.out.println("Account not found.");
+    }
+
+    void display() {
+        for (int i = 0; i < totalAccounts; i++) {
+            System.out.println("Account No: " + accounts[i].accNo);
+            System.out.println("Name: " + accounts[i].name);
+            System.out.println("Balance: " + accounts[i].balance);
+        }
+    }
+}
+
+public class q7 {
+    public static void main(String args[]) {
+        Bank b = new Bank();
+
+        Account a1 = new Account(101, "Rahul", 5000);
+        Account a2 = new Account(102, "Priya", 8000);
+
+        b.addAccount(a1);
+        b.addAccount(a2);
+
+        b.deposit(101, 2000);
+        b.withdraw(102, 3000);
+
+        b.display();
+
+        b.removeAccount(101);
+
+        System.out.println("After removing account:");
+        b.display();
+    }
+}`,
+    "output": `Account added successfully.
+Account added successfully.
+Amount deposited.
+Amount withdrawn.
+Account No: 101
+Name: Rahul
+Balance: 7000.0
+Account No: 102
+Name: Priya
+Balance: 5000.0
+Account removed.
+After removing account:
+Account No: 102
+Name: Priya
+Balance: 5000.0`
   },
    "8": {"title": `Write a Java program to create class called "TrafficLight" with attributes for color and duration, and methods to change the color and check for red or green.`,
     "code":  `package oops;
