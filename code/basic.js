@@ -368,7 +368,8 @@ public class q14 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter a number: 55
+Result: 6765`
     },
     "15": {
         "title": `Write a Java program to display the system time`,
@@ -381,7 +382,7 @@ public class q15{
         System.out.print(d);
     }
 }`,
-        "output": ``
+        "output": `Mon Nov 09 23:30:08 IST 2026`
     },
     "16": {
         "title": `Write a Java program to print the odd numbers from 1 to 20`,
@@ -396,7 +397,7 @@ public class q16 {
     }
 }
 `,
-        "output": ``
+        "output": `1 3 5 7 9 11 13 15 17 19 `
     },
     "17": {
         "title": `Write a Java program to print the even numbers from 1 to 20`,
@@ -413,7 +414,7 @@ public class q17 {
     }
 }
 `,
-        "output": ``
+        "output": `2 4 6 8 10 12 14 16 18 20`
     },
     "18": {
         "title": `Write a Java program to convert a string to an integer`,
@@ -431,7 +432,8 @@ public class q18 {
     }
 }
 `,
-        "output": ``
+        "output": `String: 12345
+Integer: 12345`
     },
     "19": {
         "title": `Write a Java program to convert seconds to hour, minute and seconds`,
@@ -457,7 +459,10 @@ public class q19 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter time in seconds: 120
+Hours: 0
+Minutes: 2
+Seconds: 0`
     },
     "20": {
         "title": `Write a Java program to compute the sum of the first 100 prime numbers`,
@@ -490,7 +495,7 @@ public class q20 {
     }
 }
 `,
-        "output": ``
+        "output": `Sum of first 100 prime numbers: 24133`
     },
     "21": {
         "title": `Write a Java program to swap the first and last elements of an array and create a new array`,
@@ -524,11 +529,14 @@ public class q21 {
     }
 }
 `,
-        "output": ``
+        "output": `Original array:
+10 20 30 40 50 
+New array:
+50 20 30 40 10 `
     },
     "22": {
         "title": `Write a Java program to count the number of even and odd elements in a given array`,
-        "code": `package singleDArr;
+        "code": `package basic;
 
 import java.util.Scanner;
 
@@ -555,7 +563,14 @@ public class q22 {
         System.out.println("Odd elements: " + odd);
     }
 }`,
-        "output": ``
+        "output": `Enter 5 elements:
+34
+54
+23
+11
+8
+Even elements: 3
+Odd elements: 2`
     },
     "23": {
         "title": `Write a Java program to compute the square root of an given integer`,
@@ -578,7 +593,8 @@ public class q23 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter an integer: 12
+Square root: 3.4641016151377544`
     },
     "24": {
         "title": `Write a Java program to check if a positive number is a palindrome or not`,
@@ -611,7 +627,8 @@ public class q24 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter a positive number: 34
+Not a palindrome number.`
     },
     "25": {
         "title": `Write a Java program to add two numbers without using any arithmetic operators`,
@@ -644,7 +661,8 @@ public class q26 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter a positive integer: 23
+Sum of digits: 5`
     },
     "27": {
         "title": `Java program to find area of circle`,
@@ -666,7 +684,8 @@ public class q27 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter radius: 5
+Area of circle: 78.53981633974483`
     },
     "28": {
         "title": `Java Program to find area of rectangle`,
@@ -691,7 +710,9 @@ public class q28 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter length: 45
+Enter breadth: 39
+Area of rectangle: 1755.0`
     },
     "29": {
         "title": `Java Program to find area of triangle`,
@@ -716,7 +737,9 @@ public class q29 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter base: 10
+Enter height: 12
+Area of triangle: 60.0`
     },
     "30": {
         "title": `Java Program to find area of equilateral triangle`,
@@ -738,7 +761,8 @@ public class q30 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter side: 5
+Area of equilateral triangle: 10.825317547305481`
     },
     "31": {
         "title": `Java Program to find area of rhombus`,
@@ -763,7 +787,9 @@ public class q31 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter first diagonal: 10
+Enter second diagonal: 10
+Area of rhombus: 50.0`
     },
     "32": {
         "title": `Java Program to find area of parallelogram`,
@@ -788,7 +814,9 @@ public class q32 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter base: 10
+Enter height: 12
+Area of parallelogram: 120.0`
     },
     "33": {
         "title": `Java Program to find area of Prism`,
@@ -816,7 +844,10 @@ public class q33 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter length: 10
+Enter breadth: 12
+Enter height: 5
+Total surface area of prism: 460.0`
     },
     "34": {
         "title": `Java Program to find volume of sphere`,
@@ -838,7 +869,8 @@ public class q34 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter radius: 10
+Volume of sphere: 4188.790204786391`
     },
     "35": {
         "title": `Java Program to find volume of cylinder`,
@@ -863,7 +895,9 @@ public class q35 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter radius: 7
+Enter height: 24
+Volume of cylinder: 3694.5129606215964`
     },
     "36": {
         "title": `Java Program to find volume of cuboid`,
@@ -891,7 +925,10 @@ public class q36 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter length: 10
+Enter breadth: 12
+Enter height: 5
+Volume of cuboid: 600.0`
     },
     "37": {
         "title": `Java Program to find volume of cone`,
@@ -914,7 +951,9 @@ public class q37 {
         System.out.println("Volume of cone: " + volume);
     }
 }`,
-        "output": ``
+        "output": `Enter radius: 9
+Enter height: 7
+Volume of cone: 593.7610115284709`
     },
     "38": {
         "title": `Java program to find surface area of cuboid`,
@@ -940,7 +979,10 @@ public class q38 {
         System.out.println("Surface area of cuboid: " + area);
     }
 }`,
-        "output": ``
+        "output": `Enter length: 25
+Enter breadth: 21
+Enter height: 8
+Surface area of cuboid: 1786.0`
     },
     "39": {
         "title": `Java program to find surface area of cylinder`,
@@ -963,7 +1005,9 @@ public class q39 {
         System.out.println("Surface area of cylinder: " + area);
     }
 }`,
-        "output": ``
+        "output": `Enter radius: 10
+Enter height: 7
+Surface area of cylinder: 1068.1415022205297`
     },
     "40": {
         "title": `Java program to find surface area of cube`,
@@ -983,7 +1027,8 @@ public class q40 {
         System.out.println("Surface area of cube: " + area);
     }
 }`,
-        "output": ``
+        "output": `Enter side: 5
+Surface area of cube: 150.0`
     },
     "41": {
         "title": `Java program to calculate average marks`,
@@ -1008,7 +1053,12 @@ public class q41 {
         System.out.println("Average marks: " + average);
     }
 }`,
-        "output": ``
+        "output": `Enter marks in 5 subjects: 67
+89
+90
+88
+76
+Average marks: 82.0`
     },
     "42": {
         "title": `Java program to check vowel or consonant`,
@@ -1036,7 +1086,8 @@ public class q42 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter an alphabet: t
+Consonant`
     },
     "43": {
         "title": `Java program to sum of N numbers`,
@@ -1062,7 +1113,15 @@ public class q43 {
         System.out.println("Sum: " + sum);
     }
 }`,
-        "output": ``
+        "output": `Enter the value of N: 6
+Enter 6 numbers:
+45
+34
+23
+66
+45
+56
+Sum: 269`
     },
     "44": {
         "title": `Java program to find factorial of any number`,
@@ -1090,7 +1149,8 @@ public class q44 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter a number: 5 
+Factorial: 120`
     },
     "45": {
         "title": `Java Program to calculate electricity bill`,
@@ -1136,7 +1196,9 @@ public class q49 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter total sales: 50000
+Enter commission amount: 20000
+Commission Percentage: 40.0%`
     },
     "50": {
         "title": `Java Pogram To Find Distance Between Two Points`,
@@ -1163,7 +1225,9 @@ public class q50 {
         System.out.println("Distance: " + distance);
     }
 }`,
-        "output": ``
+        "output": `Enter x1 and y1: 34 56
+Enter x2 and y2: 22 67
+Distance: 16.278820596099706`
     },
     "51": {
         "title": `Java Program To Calculate Power Of Number`,
@@ -1190,7 +1254,9 @@ public class q51 {
         System.out.println("Result: " + result);
     }
 }`,
-        "output": ``
+        "output": `Enter base: 10
+Enter exponent: 6
+Result: 1000000`
     },
     "52": {
         "title": `Write a Java program to take three numbers from the user and print the greatest number`,
@@ -1216,7 +1282,8 @@ public class q52 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter three numbers: 23 45 21
+Greatest number: 45`
     },
     "53": {
         "title": `Write a Java program to find the number of days in a month`,
@@ -1245,7 +1312,8 @@ public class q54 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter a number: 23
+Positive number`
     },
     "55": {
         "title": `Write a Java Program to accept number of week’s day (1-7) and print name of the day`,
@@ -1287,7 +1355,8 @@ public class q55 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter day number (1-7): 5
+Friday`
     },
     "56": {
         "title": `Write a Java program that takes a year from user and print whether that year is a leap year or not`,
@@ -1320,7 +1389,14 @@ public class q57 {
         System.out.println("Average = " + average);
     }
 }`,
-        "output": ``
+        "output": `Enter 5 numbers:
+23
+45
+66
+78
+12
+Sum = 224
+Average = 44.8`
     },
     "58": {
         "title": `Write a program in Java to display the first 5 natural numbers`,
@@ -1336,7 +1412,12 @@ public class q58 {
         }
     }
 }`,
-        "output": ``
+        "output": `First 5 natural numbers:
+1
+2
+3
+4
+5`
     },
     "59": {
         "title": `Write a java program to check vowel or consonant`,
@@ -1366,7 +1447,8 @@ public class q59 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter a character: a
+Vowel`
     },
     "60": {
         "title": `Write a Java program to display the cube of the number upto given an integer`,
@@ -1399,7 +1481,9 @@ public class q61 {
         System.out.println("Sum = " + sum);
     }
 }`,
-        "output": ``
+        "output": `Enter the number of terms: 3
+Odd natural numbers:
+1 3 5 Sum = 9`
     },
     "62": {
         "title": `Write a Java program to display the multiplication table of a given integer`,
@@ -1421,7 +1505,17 @@ public class q62 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter a number: 33
+33 x 1 = 33
+33 x 2 = 66
+33 x 3 = 99
+33 x 4 = 132
+33 x 5 = 165
+33 x 6 = 198
+33 x 7 = 231
+33 x 8 = 264
+33 x 9 = 297
+33 x 10 = 330`
     },
     "63": {
         "title": `Write a Java program that reads an integer and check whether it is negative, zero, or positive`,
@@ -1447,7 +1541,8 @@ public class q63 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter a number: 54
+Positive number`
     },
     "64": {
         "title": `Write a Java program that reads an positive integer and count the number of digits`,
@@ -1476,7 +1571,8 @@ public class q64 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter a positive integer: 67
+Number of digits = 2`
     },
     "65": {
         "title": `Write a Java program that accepts three numbers and check All numbers are equal or not`,
@@ -1502,7 +1598,8 @@ public class q65 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter three numbers: 45 65 23
+All numbers are not equal.`
     },
     "66": {
         "title": `Write a java program that accepts three numbers from the user and check if numbers are in “increasing” or “decreasing” order.`,
@@ -1530,7 +1627,8 @@ public class q66 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter three numbers: 32 65 52
+Numbers are neither in increasing nor decreasing order.`
     },
     "67": {
         "title": `Write a Java program that determines a student’s grade`,
@@ -1564,7 +1662,8 @@ public class q67 {
         }
     }
 }`,
-        "output": ``
+        "output": `Enter percentage: 78
+Grade: B`
     },
     "68": {
         "title": `Write a Java program to create a simple calculator`,
