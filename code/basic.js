@@ -161,29 +161,29 @@ b = 34`
     "7": {
         "title": `Write a Java program to convert a decimal number to binary numbers`,
         "code": `
-// package basic;
+package basic;
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// public class q7 {
-//     public static void main(String args[]) {
-//         Scanner input = new Scanner(System.in);
+public class q7 {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
 
-//         System.out.print("Enter a decimal number: ");
-//         int num = input.nextInt();
+        System.out.print("Enter a decimal number: ");
+        int num = input.nextInt();
 
-//         int binary = 0, place = 1;
+        int binary = 0, place = 1;
 
-//         while (num > 0) {
-//             int remainder = num % 2;
-//             binary = binary + remainder * place;
-//             num = num / 2;
-//             place = place * 10;
-//         }
+        while (num > 0) {
+            int remainder = num % 2;
+            binary = binary + remainder * place;
+            num = num / 2;
+            place = place * 10;
+        }
 
-//         System.out.println("Binary: " + binary);
-//     }
-// }
+        System.out.println("Binary: " + binary);
+    }
+}
 `,
         "output": ``
     },
