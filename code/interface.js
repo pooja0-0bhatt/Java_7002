@@ -2,7 +2,8 @@ let dql =
 {
   "1": {
     "title": `Write a Java program to create an interface Shape with the getArea() method. Create three classes Rectangle, Circle, and Triangle that implement the Shape interface. Implement the getArea() method for each of the three classes.`,
-    "code":  `interface Shape{
+    "code":  `package interfaces;
+    interface Shape{
     float getArea();
 }
 
@@ -58,11 +59,14 @@ public class q1{
         System.out.println("Area of the rectangle : "+areaR);
     }
 }`,
-    "output": ``
+    "output": `Area of the circle : 50.24
+Area of the triangle : 7.5
+Area of the rectangle : 20.0`
   },
   "2": {
     "title": `Write a Java program to create a Animal interface with a method called bark() that takes no arguments and returns void. Create a Dog class that implements Animal and overrides speak() to print "Dog is barking".`,
-    "code":  `interface Animal{
+    "code":  `package interfaces;
+    interface Animal{
     void speak();
 }
 
@@ -78,11 +82,12 @@ public class q2 {
         d.speak();
     }
 }`,
-    "output": ``
+    "output": `Dog is barking`
   },
   "3": {
     "title": `Write a Java program to create an interface Flyable with a method called fly_obj(). Create three classes Spacecraft, Airplane, and Helicopter that implement the Flyable interface. Implement the fly_obj() method for each of the three classes.`,
-    "code":  `interface Flyable{
+    "code":  `package interfaces;
+    interface Flyable{
     void fly_obj();
 }
 
@@ -115,11 +120,14 @@ public class q3 {
         h1.fly_obj();
     }
 }`,
-    "output": ``
+    "output": `Spacecraft flying.
+Airplane flying.
+Helicopter flying.`
   },
    "4": {
     "title": `Write a Java programming to create a banking system with three classes - Bank, Account, SavingsAccount, and CurrentAccount. The bank should have a list of accounts and methods for adding them. Accounts should be an interface with methods to deposit, withdraw, calculate interest, and view balances. SavingsAccount and CurrentAccount should implement the Account interface and have their own unique methods.`,
-    "code":  `//deposit, withdraw, calculate interest, and view balances
+    "code":  `package interfaces;
+    //deposit, withdraw, calculate interest, and view balances
 interface Accounts{
     float deposit(float amount);
     float withdraw(float amount);
@@ -208,7 +216,7 @@ public class q4{
         System.out.println(bal + "  " + bal2 );
     }
 }`,
-    "output": ``
+    "output": `5000.0  10000.0`
   },
    "5": {
     "title": `Write a Java program to create an interface Resizable with methods resizeWidth(int width) and resizeHeight(int height) that allow an object to be resized. Create a class Rectangle that implements the Resizable interface and implements the resize methods.`,
@@ -251,7 +259,10 @@ public class q5{
     r1.display();
     }
 }`,
-    "output": ``
+    "output": `Width  : 30
+Height : 10
+Width  : 35
+Height : 15`
   },
    "6": {
     "title": `Write a Java program to create an interface Drawable with a method draw() that takes no arguments and returns void. Create three classes Circle, Rectangle, and Triangle that implement the Drawable interface and override the draw() method to draw their respective shapes.`,
@@ -290,7 +301,9 @@ public class q6 {
         t.draw();
     }
 }`,
-    "output": ``
+    "output": `Drawing a circle.
+Drawing a rectangle.
+Drawing a triangle.`
   },
    "7": {
     "title": `Write a Java program to create an interface Sortable with a method sort() that sorts an array of integers in ascending order. Create two classes BubbleSort and SelectionSort that implement the Sortable interface and provide their own implementations of the sort() method.`,
@@ -379,7 +392,12 @@ public class q7 {
         s.sort();
     }
 }`,
-    "output": ``
+    "output": `Enter 5 integers:
+34 54 12 34 5
+Bubble Sort:
+5 12 34 34 54 
+Selection Sort:
+5 12 34 34 54 `
   },
    "8": {
     "title": `Write a Java program to create an interface Playable with a method play() that takes no arguments and returns void. Create three classes Football, Volleyball, and Basketball that implement the Playable interface and override the play() method to play the respective sports.`,
@@ -418,7 +436,9 @@ public class q8 {
         b.play();
     }
 }`,
-    "output": ``
+    "output": `Playing Football.
+Playing Volleyball.
+Playing Basketball.`
   },
    "9": {
     "title": `Write a Java program to create an interface Searchable with a method search(String keyword) that searches for a given keyword in a text document. Create two classes Document and WebPage that implement the Searchable interface and provide their own implementations of the search() method.`,
