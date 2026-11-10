@@ -185,7 +185,8 @@ public class q7 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter a decimal number: 10
+Binary: 1010`
     },
     "8": {
         "title": `Write a Java program to convert a binary number to decimal number`,
@@ -214,12 +215,15 @@ public class q8 {
     }
 }
 `,
-        "output": ``
+        "output": `Enter a binary number: 1010
+Decimal: 10`
     },
     "9": {
         "title": `Write a Java program to check whether Java is installed on your computer or not`,
-        "code": ``,
-        "output": ``
+        "code": `(base) poojabhatt@MacBook-Air / % java --version`,
+        "output": `java 21.0.10 2026-01-20 LTS
+Java(TM) SE Runtime Environment (build 21.0.10+8-LTS-217)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.10+8-LTS-217, mixed mode, sharing)`
     },
     "10": {
         "title": `Write a Java program and compute the sum of the digits of an integer`,
