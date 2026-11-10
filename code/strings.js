@@ -938,7 +938,8 @@ public class q49 {
         System.out.println("Reversed String: " + sb);
     }
 }`,
-    "output": ``
+    "output": `Enter a string: Hello
+Reversed String: olleH`
   },
    "50": {
     "title": `Create an object StringBuffer class to show functionality of insert, append, delete and replace functions.`,
