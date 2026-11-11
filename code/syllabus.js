@@ -847,8 +847,18 @@ public class q33{
     public static void display(){
         System.out.println("You accessed a function of class q33 class part of syllabus package.");
     }
+
+-----------------test.java----------------------
+package syllabus;
+class test{
+    public static void main(String args[]){
+        q33.display();
+    }
+}
+
+    
 }`,
-    "output": ``
+    "output": `You accessed a function of class q33 class part of syllabus package.`
   },
    "34": {"title": `Program to import a package and use its class.`,
     "code":  `
